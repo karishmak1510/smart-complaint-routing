@@ -1,0 +1,217 @@
+
+text,department
+Street light not working,Electricity
+Street light band hai,Electricity
+Light nahi jal rahi road par,Electricity
+Electricity chali gayi hai,Electricity
+Bijli nahi aa rahi,Electricity
+Power cut ho gaya hai,Electricity
+Frequent power outage ho raha hai,Electricity
+Voltage fluctuation ho raha hai,Electricity
+Low voltage issue hai,Electricity
+High voltage problem hai,Electricity
+Electric pole gir gaya hai,Electricity
+Electric pole damaged hai,Electricity
+Transformer kharab hai,Electricity
+Transformer blast ho gaya,Electricity
+Electric wire toot gaya hai,Electricity
+Open electric wire pada hai,Electricity
+Short circuit ho raha hai,Electricity
+Meter kharab hai,Electricity
+Electric meter not working,Electricity
+Electric bill issue hai,Electricity
+Bill zyada aa raha hai,Electricity
+Street lighting problem hai,Electricity
+No electricity since morning,Electricity
+Electric supply band hai,Electricity
+Electric fault ho gaya hai,Electricity
+
+Water leakage ho raha hai,Water
+Pipeline leak ho raha hai,Water
+Pani supply band hai,Water
+No water supply,Water
+Dirty water aa raha hai,Water
+Ganda pani aa raha hai,Water
+Water contamination ho gaya hai,Water
+Pipeline toot gaya hai,Water
+Pipe burst ho gaya hai,Water
+Water tank overflow ho raha hai,Water
+Water pressure low hai,Water
+Pani pressure kam hai,Water
+Tap me pani nahi aa raha,Water
+Water shortage ho raha hai,Water
+Water connection issue hai,Water
+Supply irregular hai,Water
+Water timing issue hai,Water
+Pani bahut kam aa raha hai,Water
+Water pipeline repair chahiye,Water
+Water issue in area,Water
+
+Road me gaddha hai,Road
+Bada pothole hai road par,Road
+Road toot gaya hai,Road
+Road damaged hai,Road
+Road uneven hai,Road
+Road construction incomplete hai,Road
+Road repair nahi hua,Road
+Gaddha ki wajah se accident hua,Road
+Traffic jam ho raha hai,Road
+Road par pani bhar gaya,Road
+Waterlogging on road,Road
+Road slippery ho gaya hai,Road
+Road block ho gaya hai,Road
+Road condition bahut kharab hai,Road
+Main road damage hai,Road
+Street road broken hai,Road
+Road maintenance nahi ho raha,Road
+Road par gravel pada hai,Road
+Road hazard hai,Road
+Dangerous road condition hai,Road
+
+Garbage collect nahi ho raha,Sanitation
+Kachra jama ho raha hai,Sanitation
+Dustbin overflow ho raha hai,Sanitation
+Area dirty hai,Sanitation
+Safai nahi ho rahi hai,Sanitation
+Garbage smell aa rahi hai,Sanitation
+Waste collect nahi hua,Sanitation
+Street cleaning nahi ho rahi,Sanitation
+Kachra road par pada hai,Sanitation
+Garbage burning ho raha hai,Sanitation
+Public place dirty hai,Sanitation
+Sanitation issue hai,Sanitation
+Cleaning staff nahi aa rahe,Sanitation
+Overflowing bins hai,Sanitation
+Waste management issue hai,Sanitation
+Dirty surroundings hai,Sanitation
+Garbage pile up ho gaya hai,Sanitation
+Kachra bahut zyada hai,Sanitation
+Area me safai nahi hai,Sanitation
+Waste disposal issue hai,Sanitation
+
+Chori ho gayi hai,Police
+Mobile chori ho gaya,Police
+Bike theft ho gaya,Police
+Ghar me chori hui hai,Police
+Robbery ho gayi,Police
+Fight ho rahi hai,Police
+Ladai ho rahi hai,Police
+Accident ho gaya hai,Police
+Suspicious log ghoom rahe hain,Police
+Illegal activity ho rahi hai,Police
+Threat mil raha hai,Police
+Call par dhamki mil rahi hai,Police
+Crime ho raha hai,Police
+Police help chahiye,Police
+Emergency hai please help,Police
+Unknown log ghar ke bahar hain,Police
+Snatching incident hua hai,Police
+Pickpocketing hua hai,Police
+Violence ho raha hai,Police
+Harassment ho raha hai,Police
+
+Ambulance chahiye urgent,Health
+Medical emergency hai,Health
+Patient serious hai,Health
+Person unconscious hai,Health
+Injury ho gayi hai,Health
+Blood chahiye urgent,Health
+Doctor chahiye turant,Health
+Hospital le jana hai,Health
+Health issue serious hai,Health
+Emergency treatment chahiye,Health
+Heart attack lag raha hai,Health
+Breathing problem ho rahi hai,Health
+Medical help chahiye,Health
+Severe pain ho raha hai,Health
+Emergency case hai,Health
+Health support required,Health
+Injury critical hai,Health
+Accident victim ko help chahiye,Health
+Ambulance delay ho raha hai,Health
+Immediate medical care chahiye,Health
+
+Fire lag gayi hai,Fire
+Aag lag gayi building me,Fire
+Gas leak ho raha hai,Fire
+Cylinder leak ho gaya,Fire
+Smoke aa raha hai,Fire
+Fire breakout ho gaya,Fire
+Short circuit se fire hua,Fire
+Kitchen fire ho gaya,Fire
+Fire emergency hai,Fire
+Burning smell aa rahi hai,Fire
+Factory me fire lag gayi,Fire
+Shop me aag lag gayi,Fire
+Warehouse fire ho gaya,Fire
+Electrical fire hai,Fire
+Flames dikh rahi hain,Fire
+Fire control nahi ho raha,Fire
+Dangerous fire situation hai,Fire
+Fire brigade bulao,Fire
+Gas smell aa rahi hai,Fire
+Explosion jaisa lag raha hai,Fire
+
+Drain block ho gaya,Drainage
+Sewer overflow ho raha,Drainage
+Drain jam hai,Drainage
+Waterlogging ho gaya,Drainage
+Nali saaf nahi hai,Drainage
+Drain smell aa rahi hai,Drainage
+Sewage issue hai,Drainage
+Drainage system fail hai,Drainage
+Rain water jam hai,Drainage
+Drain pipe toot gaya,Drainage
+Water drain nahi ho raha,Drainage
+Nali bhar gayi hai,Drainage
+Sewer water road par aa raha hai,Drainage
+Drain cleaning nahi hui,Drainage
+Blockage in drainage,Drainage
+Overflowing drain hai,Drainage
+Drain issue serious hai,Drainage
+Water clogging ho raha hai,Drainage
+Drain repair chahiye,Drainage
+Drain problem hai area me,Drainage
+
+Air pollution high hai,Environment
+Noise pollution ho raha hai,Environment
+Factory smoke aa raha hai,Environment
+Water pollution ho raha hai,Environment
+Plastic burn ho raha hai,Environment
+Pollution control nahi ho raha,Environment
+Air quality poor hai,Environment
+Dust pollution hai,Environment
+Industrial waste aa raha hai,Environment
+Environment damage ho raha hai,Environment
+Loud music se disturbance hai,Environment
+Construction dust problem hai,Environment
+Garbage burning pollution hai,Environment
+Smoke pollution ho raha hai,Environment
+Water contamination hai,Environment
+Noise disturbance hai,Environment
+Pollution complaint hai,Environment
+Air quality bahut kharab hai,Environment
+Environmental hazard hai,Environment
+Pollution issue serious hai,Environment
+
+Online fraud ho gaya,Cyber Crime
+UPI scam hua,Cyber Crime
+OTP fraud hua,Cyber Crime
+Bank account hack ho gaya,Cyber Crime
+Social media hack ho gaya,Cyber Crime
+Phishing email aaya,Cyber Crime
+Fake website se paisa gaya,Cyber Crime
+Cyber attack hua,Cyber Crime
+Identity theft ho gaya,Cyber Crime
+Digital fraud ho gaya,Cyber Crime
+Online scam hua,Cyber Crime
+Fraud call aaya,Cyber Crime
+Suspicious link mila,Cyber Crime
+Account compromise ho gaya,Cyber Crime
+Unauthorized transaction hua,Cyber Crime
+Credit card fraud hua,Cyber Crime
+Net banking hack ho gaya,Cyber Crime
+Cyber complaint hai,Cyber Crime
+Data breach ho gaya,Cyber Crime
+Online cheating ho gayi,Cyber Crime
+
