@@ -26,6 +26,7 @@ No electricity since morning,Electricity
 Electric supply band hai,Electricity
 Electric fault ho gaya hai,Electricity
 
+
 Water leakage ho raha hai,Water
 Pipeline leak ho raha hai,Water
 Pani supply band hai,Water
@@ -46,6 +47,19 @@ Water timing issue hai,Water
 Pani bahut kam aa raha hai,Water
 Water pipeline repair chahiye,Water
 Water issue in area,Water
+pani nahi aa raha,Water 
+water supply band hai,Water 
+pani supply nahi ho rahi,Water 
+no water in area,Water 
+dirty water aa raha hai,Water 
+ganda pani aa raha hai,Water 
+water leakage ho raha hai,Water 
+pipeline toot gaya hai,Water 
+pipe burst ho gaya,Water p
+ani pressure kam hai,Water 
+water shortage hai,Water 
+tap me pani nahi aa raha,Water 
+water problem in area,Water
 
 Road me gaddha hai,Road
 Bada pothole hai road par,Road
@@ -67,6 +81,18 @@ Road maintenance nahi ho raha,Road
 Road par gravel pada hai,Road
 Road hazard hai,Road
 Dangerous road condition hai,Road
+road me gaddha hai,Road 
+pothole hai road par,Road 
+road toot gaya hai,Road 
+road condition kharab hai,Road 
+road repair nahi hua,Road 
+gaddha ki wajah se accident hua,Road 
+road par pani bhar gaya,Road 
+road slippery hai,Road 
+road block ho gaya hai,Road 
+road damage hai,Road 
+street road broken hai,Road 
+main road kharab hai,Road
 
 Garbage collect nahi ho raha,Sanitation
 Kachra jama ho raha hai,Sanitation
@@ -88,6 +114,16 @@ Garbage pile up ho gaya hai,Sanitation
 Kachra bahut zyada hai,Sanitation
 Area me safai nahi hai,Sanitation
 Waste disposal issue hai,Sanitation
+kachra pada hai,Sanitation 
+garbage collect nahi hua,Sanitation 
+dustbin overflow ho raha hai,Sanitation 
+area dirty hai,Sanitation 
+safai nahi ho rahi hai,Sanitation 
+garbage smell aa rahi hai,Sanitation 
+waste collect nahi hua,Sanitation 
+kachra jama ho gaya hai,Sanitation
+ garbage pile up hai,Sanitation 
+ dirty surroundings hai,Sanitation
 
 Chori ho gayi hai,Police
 Mobile chori ho gaya,Police
@@ -109,6 +145,18 @@ Snatching incident hua hai,Police
 Pickpocketing hua hai,Police
 Violence ho raha hai,Police
 Harassment ho raha hai,Police
+chori ho gayi hai,Police 
+mobile chori ho gaya,Police 
+bike theft ho gaya,Police 
+ghar me chori hui hai,Police 
+robbery ho gayi,Police 
+fight ho rahi hai,Police 
+ladai ho rahi hai,Police 
+accident ho gaya hai,Police 
+threat mil raha hai,Police 
+illegal activity ho rahi hai,Police 
+harassment ho raha hai,Police 
+snatching ho gayi,Police
 
 Ambulance chahiye urgent,Health
 Medical emergency hai,Health

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | Complaint System</title>
+
+<style>
+:root {
+    --bg: #f4f6f8;
+    --card: rgba(255,255,255,0.85);
+    --text: #000;
+    --primary: #2563eb;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --card: rgba(30,41,59,0.8);
+    --text: #f1f5f9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 360px;
+    padding: 30px;
+    border-radius: 18px;
+    background: var(--card);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="toggle" onclick="toggleMode()">🌙 / ☀️</div>
+
+<div class="container">
+    <h2>🔐 Login</h2>
+
+    <form method="POST" action="/login">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="text" name="phone" placeholder="Enter Phone Number" required>
+        <button type="submit">Send OTP</button>
+    </form>
+</div>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
