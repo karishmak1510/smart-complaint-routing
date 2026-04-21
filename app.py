@@ -8,7 +8,7 @@ from emails import department_emails
 
 app = Flask(__name__)
 app.secret_key = "secret123"
-
+DEMO_MODE = True   # 🔥 change later
 # OTP storage
 otp_store = {}
 otp_attempts = {}
@@ -50,6 +50,26 @@ def verify():
     if otp_attempts.get(phone, 0) >= 5:
         otp_attempts[phone] = 0
         return render_template("login.html", error="❌ Too many attempts! Try again.")
+
+
+
+
+# 🔥 DEMO MODE
+if DEMO_MODE:
+    session["user"] = phone
+    otp_attempts[phone] = 0
+    return redirect("/main")
+
+
+
+
+
+
+
+
+
+
+
 
     if otp_store.get(phone) == user_otp:
         session["user"] = phone
