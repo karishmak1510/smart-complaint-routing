@@ -79,7 +79,7 @@ def main():
             result = "🚨 Emergency! Sent to Police"
         else:
             dept = predict(complaint)
-            email = department_emails.get(dept)
+            email = department_emails.get(dept,"nandirajcse555@gmail.com")
 
             send_email(email, complaint, dept)
 
@@ -97,4 +97,4 @@ import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=True)
