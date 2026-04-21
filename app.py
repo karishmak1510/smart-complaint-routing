@@ -46,30 +46,14 @@ def verify():
     phone = request.form["phone"]
     user_otp = int(request.form["otp"])
 
-    # limit check
     if otp_attempts.get(phone, 0) >= 5:
         otp_attempts[phone] = 0
-        return render_template("login.html", error="❌ Too many attempts! Try again.")
+        return redirect("/")
 
-
-
-
-# 🔥 DEMO MODE
-if DEMO_MODE:
-    session["user"] = phone
-    otp_attempts[phone] = 0
-    return redirect("/main")
-
-
-
-
-
-
-
-
-
-
-
+    if DEMO_MODE:
+        session["user"] = phone
+        otp_attempts[phone] = 0
+        return redirect("/main")
 
     if otp_store.get(phone) == user_otp:
         session["user"] = phone
@@ -78,12 +62,7 @@ if DEMO_MODE:
     else:
         otp_attempts[phone] += 1
         remaining = 5 - otp_attempts[phone]
-
-        return render_template(
-            "otp.html",
-            phone=phone,
-            error=f"❌ Invalid OTP! {remaining} attempts left"
-        )
+        return render_template("otp.html", phone=phone, error=f"❌ Invalid OTP! {remaining} attempts left")
 # 🔹 Main page
 @app.route("/main", methods=["GET", "POST"])
 def main():
