@@ -1,103 +1,351 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Login | Complaint System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Complaint Routing - Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root {
-    --bg: #f4f6f8;
-    --card: rgba(255,255,255,0.85);
-    --text: #000;
-    --primary: #2563eb;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body.dark {
-    --bg: #0f172a;
-    --card: rgba(30,41,59,0.8);
-    --text: #f1f5f9;
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #111827
+    );
+
+    overflow:hidden;
 }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* BACKGROUND CIRCLES */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(59,130,246,0.4),
+        rgba(124,58,237,0.4)
+    );
+
+    filter:blur(20px);
 }
 
-.container {
-    width: 360px;
-    padding: 30px;
-    border-radius: 18px;
-    background: var(--card);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-    text-align: center;
+.circle1{
+
+    width:300px;
+    height:300px;
+
+    top:-100px;
+    left:-100px;
 }
 
-h2 {
-    margin-bottom: 20px;
+.circle2{
+
+    width:250px;
+    height:250px;
+
+    bottom:-80px;
+    right:-80px;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 12px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
+/* LOGIN CARD */
+
+.container{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(15px);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.4);
+
+    position:relative;
+
+    z-index:10;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 18px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+/* LOGO */
+
+.logo{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    color:white;
+
+    box-shadow:
+    0 10px 25px rgba(59,130,246,0.35);
+
+    margin-bottom:25px;
 }
 
-button:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+/* TITLE */
+
+h1{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:10px;
+
+    font-size:34px;
 }
 
-.toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+.subtitle{
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    margin-bottom:30px;
+
+    font-size:15px;
 }
+
+/* FORM */
+
+.input-group{
+
+    margin-bottom:20px;
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#e2e8f0;
+
+    font-weight:500;
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+    rgba(255,255,255,0.12);
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+input::placeholder{
+
+    color:#cbd5e1;
+}
+
+input:focus{
+
+    background:
+    rgba(255,255,255,0.18);
+
+    box-shadow:
+    0 0 0 4px
+    rgba(59,130,246,0.25);
+}
+
+/* BUTTON */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    margin-top:10px;
+
+    box-shadow:
+    0 10px 20px rgba(59,130,246,0.3);
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    opacity:0.95;
+}
+
+/* FOOTER */
+
+.footer{
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    margin-top:25px;
+
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .container{
+
+        margin:20px;
+
+        padding:30px;
+    }
+
+    h1{
+
+        font-size:28px;
+    }
+}
+
 </style>
 
 </head>
+
 <body>
 
-<div class="toggle" onclick="toggleMode()">🌙 / ☀️</div>
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
 
 <div class="container">
-    <h2>🔐 Login</h2>
+
+    <div class="logo">
+        ⚡
+    </div>
+
+    <h1>
+        Smart Complaint Routing
+    </h1>
+
+    <p class="subtitle">
+        AI Powered Complaint Management System
+    </p>
 
     <form method="POST" action="/login">
-        <input type="text" name="name" placeholder="Enter Name" required>
-        <input type="text" name="phone" placeholder="Enter Phone Number" required>
-        <button type="submit">Send OTP</button>
-    </form>
-</div>
 
-<script>
-function toggleMode() {
-    document.body.classList.toggle("dark");
-}
-</script>
+        <div class="input-group">
+
+            <label>
+                📧 Email Address
+            </label>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+        </div>
+
+        <button type="submit">
+            Send OTP 🚀
+        </button>
+
+    </form>
+
+    <div class="footer">
+
+        Flask + Machine Learning + SQLite
+
+    </div>
+
+</div>
 
 </body>
 </html>

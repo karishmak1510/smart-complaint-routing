@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Complaint Statistics</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f4f7fb;
+    padding:40px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#2563eb;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card h1{
+    font-size:50px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#7c3aed;
+    color:white;
+}
+
+tr:hover{
+    background:#f1f5f9;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/main">
+⬅ Back
+</a>
+
+<h1>Complaint Statistics 📊</h1>
+
+<div class="card">
+
+<h2>Total Complaints</h2>
+
+<h1>{{ total }}</h1>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Department</th>
+<th>Total Complaints</th>
+
+</tr>
+
+{% for row in data %}
+
+<tr>
+
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>
