@@ -14,6 +14,8 @@ def send_email(
     subject
 ):
 
+    print("🚀 send_email function started")
+
     try:
 
         socket.setdefaulttimeout(20)
@@ -24,20 +26,25 @@ def send_email(
         msg["From"] = SENDER_EMAIL
         msg["To"] = to_email
 
+        print("📧 Connecting to Gmail SMTP")
+
         server = smtplib.SMTP(
             "smtp.gmail.com",
-            587,
-            timeout=20
+            587
         )
 
         server.ehlo()
 
         server.starttls()
 
+        print("🔐 Logging in")
+
         server.login(
             SENDER_EMAIL,
             APP_PASSWORD
         )
+
+        print("📨 Sending email")
 
         server.sendmail(
             SENDER_EMAIL,
@@ -47,13 +54,9 @@ def send_email(
 
         server.quit()
 
-        print(
-            "✅ Email sent successfully"
-        )
+        print("✅ Email sent successfully")
 
     except Exception as e:
 
-        print(
-            "❌ Email Error:",
-            e
-        )
+        print("❌ EMAIL ERROR:")
+        print(str(e))
