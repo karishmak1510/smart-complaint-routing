@@ -1,5 +1,7 @@
-EMAIL_ENABLED = True  # ❌ Training time OFF rakho
-# EMAIL_ENABLED = True  # ✅ Jab ready ho tab ON kar dena
+import os
 
-SENDER_EMAIL = "complainrouter@gmail.com"
-APP_PASSWORD = "ddyx azgb pnwz jkdm"
+EMAIL_ENABLED = True
+
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
+
+APP_PASSWORD = os.environ.get("APP_PASSWORD")

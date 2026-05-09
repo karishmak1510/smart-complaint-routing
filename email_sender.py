@@ -1,6 +1,4 @@
 import smtplib
-import socket
-
 from email.mime.text import MIMEText
 
 from config import (
@@ -14,11 +12,9 @@ def send_email(
     subject
 ):
 
-    print("🚀 send_email function started")
+    print("🚀 EMAIL FUNCTION STARTED")
 
     try:
-
-        socket.setdefaulttimeout(20)
 
         msg = MIMEText(message)
 
@@ -26,14 +22,12 @@ def send_email(
         msg["From"] = SENDER_EMAIL
         msg["To"] = to_email
 
-        print("📧 Connecting to Gmail SMTP")
+        print("📧 Connecting SMTP")
 
         server = smtplib.SMTP(
             "smtp.gmail.com",
             587
         )
-
-        server.ehlo()
 
         server.starttls()
 
@@ -44,7 +38,7 @@ def send_email(
             APP_PASSWORD
         )
 
-        print("📨 Sending email")
+        print("📨 Sending Email")
 
         server.sendmail(
             SENDER_EMAIL,
@@ -54,7 +48,7 @@ def send_email(
 
         server.quit()
 
-        print("✅ Email sent successfully")
+        print("✅ EMAIL SENT SUCCESSFULLY")
 
     except Exception as e:
 
