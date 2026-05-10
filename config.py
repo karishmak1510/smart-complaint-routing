@@ -1,7 +1,5 @@
-import os
-
 EMAIL_ENABLED = True
 
-SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
+SENDER_EMAIL = "complainroute1@gmail.com"
 
-APP_PASSWORD = os.environ.get("APP_PASSWORD")
+APP_PASSWORD = "caywkiflzjfydmmc"
